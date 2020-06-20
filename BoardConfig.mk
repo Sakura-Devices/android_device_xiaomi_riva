@@ -81,7 +81,6 @@ QCOM_BT_USE_SMD_TTY := true
 
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_TS_MAKEUP := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
@@ -106,8 +105,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := true
-USE_DEVICE_SPECIFIC_GPS := true
+GNSS_HIDL_LEGACY_MEASURMENTS = true
 LOC_HIDL_VERSION := 3.0
 
 # GPU
@@ -138,6 +136,11 @@ TARGET_COMPILE_WITH_MSM_KERNEL	:= true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/liblbs_core.so|libloc_shim.so \
+    /vendor/lib64/libloc_api_v02.so|libloc_shim.so
 
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
