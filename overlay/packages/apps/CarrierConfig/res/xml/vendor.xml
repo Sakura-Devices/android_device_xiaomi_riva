@@ -1392,7 +1392,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
@@ -1457,7 +1456,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
@@ -1569,7 +1567,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
@@ -1612,7 +1609,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
@@ -1693,6 +1689,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_common_callsettings_support_bool" value="true" />
     </carrier_config>
+
+    <carrier_config mcc="460" mnc="15">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+
     <carrier_config mcc="310" mnc="00">
         <boolean name="carrier_rtt_supported" value="true" />
         <boolean name="carrier_rtt_auto_upgrade" value="true" />
